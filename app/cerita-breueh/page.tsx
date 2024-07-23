@@ -1,6 +1,7 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
+import blogData from "@/components/Blog/blogData";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import Image from "next/image";
 
@@ -371,30 +372,18 @@ const BlogSidebarPage = () => {
                   Related Posts
                 </h3>
                 <ul className="p-8">
-                  <li className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
+                {blogData.map((blog, index) => (
+                  <li 
+                  key={index}
+                  className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
                     <RelatedPost
-                      title="Best way to boost your online sales."
-                      image="/images/blog/post-01.jpg"
+                      title={blog.title}
+                      image={blog.image}
                       slug="/blog-details"
-                      date="12 Feb 2025"
+                      date={blog.publishDate}
                     />
                   </li>
-                  <li className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
-                    <RelatedPost
-                      title="50 Best web design tips & tricks that will help you."
-                      image="/images/blog/post-02.jpg"
-                      slug="#"
-                      date="15 Feb, 2024"
-                    />
-                  </li>
-                  <li>
-                    <RelatedPost
-                      title="The 8 best landing page builders, reviewed"
-                      image="/images/blog/post-03.jpg"
-                      slug="#"
-                      date="05 Jun, 2024"
-                    />
-                  </li>
+                  ))}
                 </ul>
               </div>
               <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
