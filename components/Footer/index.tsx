@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="py-8">
           <div className="container">
             <p className="text-center text-base text-body-color dark:text-white">
-              &copy; Copyright 2024 KKN
-            <a href="https://instagram.com/canden.breueh" rel="nofollow noopener"> Canden Breueh</a> UGM
+              &copy; Copyright 2024 KKN-PPM UGM
+            <a href="https://instagram.com/canden.breueh" rel="nofollow noopener"> Canden Breueh</a>
             </p>
           </div>
         </div>

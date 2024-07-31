@@ -3,7 +3,7 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Menjelajahi Keindahan Breueh Island",
+    title: "Menjelajahi Keindahan Pulau Breueh",
     paragraph: "Breueh Island adalah destinasi wisata yang mempesona dengan pantai-pantai yang indah. Artikel ini akan membawa Anda menjelajahi keindahan dan aktivitas menarik yang bisa dilakukan di Breueh Island.",
     image: "/images/blog/blog-01.jpg",
     author: {
@@ -11,7 +11,7 @@ const blogData: Blog[] = [
       image: "/images/blog/author-01.png",
       designation: "Penulis"
     },
-    tags: ["Travel", "Island", "Adventure"],
+    tags: ["Pulau", "Wisata Aceh", "Travel"],
     publishDate: "2024-07-20"
   },
   {
@@ -25,7 +25,7 @@ const blogData: Blog[] = [
       image: "/images/blog/author-02.png",
       designation: "Content Writer",
     },
-    tags: [""],
+    tags: ["Budaya", "Aceh"],
     publishDate: "2025",
   },
   {
@@ -35,11 +35,11 @@ const blogData: Blog[] = [
       "Pantai Lambaro adalah salah satu pantai yang indah di Aceh. Artikel ini akan membawa Anda menikmati keindahan pantai Lambaro dan aktivitas menarik yang bisa dilakukan di sana.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "Niki",
       image: "/images/blog/author-03.png",
       designation: "",
     },
-    tags: [""],
+    tags: ["Pantai", "Wisata Aceh"],
     publishDate: "2025",
   },
 ];
