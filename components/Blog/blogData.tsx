@@ -3,44 +3,58 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
-    paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+    title: "Menjelajahi Keindahan Pulau Breueh",
+    paragraph: "Breueh Island adalah destinasi wisata yang mempesona dengan pantai-pantai yang indah. Artikel ini akan membawa Anda menjelajahi keindahan dan aktivitas menarik yang bisa dilakukan di Breueh Island.",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "Samuyl Joshi",
+      name: "Niki",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "Penulis"
     },
-    tags: ["creative"],
-    publishDate: "2025",
+    tags: ["Pulau", "Wisata Aceh", "Travel"],
+    publishDate: "2024-07-20"
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "Mengenal Budaya Aceh",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Aceh adalah salah satu provinsi di Indonesia yang memiliki kekayaan budaya yang luar biasa. Artikel ini akan membawa Anda mengenal budaya Aceh yang unik dan menarik.",
     image: "/images/blog/blog-02.jpg",
     author: {
       name: "Musharof Chy",
       image: "/images/blog/author-02.png",
       designation: "Content Writer",
     },
-    tags: ["computer"],
+    tags: ["Budaya", "Aceh"],
     publishDate: "2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "Menikmati Keindahan Pantai Lambaro",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Pantai Lambaro adalah salah satu pantai yang indah di Aceh. Artikel ini akan membawa Anda menikmati keindahan pantai Lambaro dan aktivitas menarik yang bisa dilakukan di sana.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "Niki",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "",
     },
-    tags: ["design"],
+    tags: ["Pantai", "Wisata Aceh"],
+    publishDate: "2025",
+  },
+  
+  {
+    id: 4,
+    title: "Wisata Kuliner Aceh yang Wajib Dicoba",
+    paragraph:
+      "Aceh adalah surganya kuliner di Indonesia. Artikel ini akan membawa Anda menjelajahi wisata kuliner Aceh yang wajib dicoba, mulai dari makanan tradisional hingga makanan modern.",
+    image: "/images/blog/blog-03.jpg",
+    author: {
+      name: "Niki",
+      image: "/images/blog/author-03.png",
+      designation: "",
+    },
+    tags: ["Kuliner"],
     publishDate: "2025",
   },
 ];
