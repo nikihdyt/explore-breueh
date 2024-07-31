@@ -42,5 +42,20 @@ const blogData: Blog[] = [
     tags: ["Pantai", "Wisata Aceh"],
     publishDate: "2025",
   },
+  
+  {
+    id: 4,
+    title: "Wisata Kuliner Aceh yang Wajib Dicoba",
+    paragraph:
+      "Aceh adalah surganya kuliner di Indonesia. Artikel ini akan membawa Anda menjelajahi wisata kuliner Aceh yang wajib dicoba, mulai dari makanan tradisional hingga makanan modern.",
+    image: "/images/blog/blog-03.jpg",
+    author: {
+      name: "Niki",
+      image: "/images/blog/author-03.png",
+      designation: "",
+    },
+    tags: ["Kuliner"],
+    publishDate: "2025",
+  },
 ];
 export default blogData;
