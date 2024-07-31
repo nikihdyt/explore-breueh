@@ -1,22 +1,25 @@
+'use client';
+
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import blogData from "@/components/Blog/blogData";
-import { Blog } from '@/types/blog';
 
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
 
-type BlogDetailsProps = {
-    blog: Blog | null;
+interface BlogProps {
+  params: {
+    id: string;
   };
+}
+  
+const BlogDetailsPage = ({ params }: BlogProps) => {  
+  const blogId = Number(params.id);
+  const blog = blogData.find((blog) => blog.id === Number(blogId));
 
-const BlogDetailsPage: React.FC<BlogDetailsProps> = ({ blog }) => {
-    const router = useRouter();
-
-  if (router.isFallback || !blog) {
+  if (!blog) {
     notFound();
   }
 
@@ -365,10 +368,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
   
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-    const { uid } = params as { uid: string };
-    const blog = blogData.find((blog) => blog.id.toString() === uid) || null;
+    const blogId = params?.id as string;
 
-    return { props: { blog } };
+    const blog = blogData.find((blog) => blog.id.toString() === blogId) || null;
+
+    return { props: { blog }, revalidate: 60 };
 };
   
 
