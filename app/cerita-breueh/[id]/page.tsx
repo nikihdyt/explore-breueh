@@ -1,13 +1,9 @@
 'use client';
 
-import SharePost from "@/components/Blog/SharePost";
-import TagButton from "@/components/Blog/TagButton";
 import blogData from "@/components/Blog/blogData";
-
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Head from 'next/head';
-import { GetStaticPaths, GetStaticProps } from 'next';
 
 interface BlogProps {
   params: {
@@ -304,22 +300,5 @@ const BlogDetailsPage = ({ params }: BlogProps) => {
     </>
   );
 };
-
-export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = blogData.map((blog) => ({
-      params: { uid: blog.id.toString() },
-    }));
-  
-    return { paths, fallback: true };
-};
-  
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-    const blogId = params?.id as string;
-
-    const blog = blogData.find((blog) => blog.id.toString() === blogId) || null;
-
-    return { props: { blog }, revalidate: 60 };
-};
-  
 
 export default BlogDetailsPage;
