@@ -8,7 +8,7 @@ const Blog = () => {
       <div className="container">
         <SectionTitle
           title="Baca Kisah Kami"
-          paragraph="Temukan cerita menarik dan informasi terbaru tentang Aceh di blog kami."
+          paragraph="Temukan cerita menarik di blog kami."
           center
         />
 
