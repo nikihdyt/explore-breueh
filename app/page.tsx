@@ -19,8 +19,8 @@ export default function Home() {
       <Culinary/>
       <Culture />
       <Video />
-      <Ebook />
       <Blog />
+      <Ebook />
     </>
   );
 }

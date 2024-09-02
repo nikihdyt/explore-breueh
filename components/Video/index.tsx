@@ -14,7 +14,7 @@ const Video = () => {
       <div className="container">
         <SectionTitle
           title="Lihat lebih jauh"
-          paragraph="Dari perairan biru jernih hingga matahari terbenam di atas gunung-ganang, nikmati pengalaman visual yang mendalam di Pulau Breueh."
+          paragraph="Dari perairan biru jernih hingga matahari terbenam di atas gunung-gunung, nikmati pengalaman visual yang mendalam di Pulau Breueh."
           center
           mb="80px"
         />

@@ -7,8 +7,8 @@ const Culinary = () => {
       <div className="container">
 
       <SectionTitle
-          title="Kuliner"
-          paragraph="lorem ipsum"
+          title="Rasa Autentik dari Breueh"
+          paragraph="Sajian kuliner yang menggugah selera dari ikan segar yang diambil langsung dari laut, hingga hidangan khas yang kaya akan rempah."
           center
           mb="80px"
         />
@@ -21,22 +21,22 @@ const Culinary = () => {
             <div className="grid grid-cols-2 gap-2">
                 <div>
                 <img className="object-cover object-center h-40 max-w-full rounded-lg md:h-60"
-                    src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+                    src="/images/culinary/a.jpg"
                     alt="" />
                 </div>
                 <div>
                 <img className="object-cover object-center h-40 max-w-full rounded-lg md:h-60"
-                    src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+                    src="/images/culinary/b.jpg"
                     alt="" />
                 </div>
                 <div>
                 <img className="object-cover object-center h-40 max-w-full rounded-lg md:h-60"
-                    src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2560&amp;q=80"
+                    src="/images/culinary/c.jpg"
                     alt="" />
                 </div>
                 <div>
                 <img className="object-cover object-center h-40 max-w-full rounded-lg md:h-60"
-                    src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                    src="/images/culinary/d.jpg"
                     alt="" />
                 </div>
             </div>
@@ -48,20 +48,18 @@ const Culinary = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Kuah Pliek U
+                Timphan
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Kue tradisional Aceh kenyal dengan isian serikaya atau kelapa parut.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Timphan
+                  Kuah Pliek U
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                Hidangan Aceh kaya rempah dengan santan, sayuran, dan pliek u (ampas kelapa fermentasi).
                 </p>
               </div>
               <div className="mb-1">
@@ -69,8 +67,15 @@ const Culinary = () => {
                   Kuah Beulangong
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
+                Gulai Aceh gurih dengan daging dan bumbu kelapa parut sangrai.
+                </p>
+              </div>
+              <div className="mb-1">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                  Bubur Asyura
+                </h3>
+                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                Bubur manis Pulau Breueh dengan beras, kacang-kacangan, dan santan.
                 </p>
               </div>
             </div>
